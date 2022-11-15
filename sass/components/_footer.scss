@@ -1,0 +1,144 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-background-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer__logo-container {
+  margin-bottom: 20px;
+}
+
+.footer-adress__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-adress__link {
+  display: block;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+
+  &--white {
+    color: var(--white-color);
+  }
+
+  &--gray {
+    color: var(--gray-color-60);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-social__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-social__list {
+  display: flex;
+}
+
+.footer-social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--white-color);
+
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer-form__form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-form__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.footer-form__input {
+  margin-right: 10px;
+  padding-left: 17px;
+  color: white;
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 4px;
+
+  &::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    letter-spacing: 0.03em;
+
+    color: var(--gray-color-60);
+  }
+}
+.footer-form__button {
+  display: flex;
+  align-items: center;
+  padding: 10px 28px;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.footer-form__button-icon {
+  margin-left: 10px;
+}

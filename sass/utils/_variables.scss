@@ -1,0 +1,28 @@
+:root {
+    /* text/colors*/
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --accent-color: #2196f3;
+    --blue-color: #2196f3;
+    --white-color: #ffffff;
+    --gray-color-50: rgba(117, 117, 117, 0.5);
+    --gray-color-60: rgba(255, 255, 255, 0.6);
+    --gray-color-100: #f5f4fa;
+    /* background */
+    --main-background-color: #ffffff;
+    --secondary-background-color: #f5f4fa;
+    --hero-backgroun-color: #2f303a;
+    --footer-background-color: #2f303a;
+    --backdrop-background-color: rgba(0, 0, 0, 0.2);
+    --card-background: rgba(33, 150, 243, 0.9);
+    /* logo */
+    --blue-logo-color: #2196f3;
+    --white-logo-color: #ffffff;
+    --black-logo-color: #000000;
+    /* icons color */
+    --icon-gray-color: #afb1b8;
+    --icon-black-color: #212121;
+    /* transition */
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-duration: 250ms;
+}
