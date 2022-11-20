@@ -24,6 +24,29 @@
           <a class="logo" href="./index.html"
             >Web<span class="logo-header logo-header--black">Studio</span>
           </a>
+
+          <button
+            type="menu"
+            class="mobile-menu__button"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg
+              class="mobile-menu__icon"
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="mobile-menu__icon-menu"
+                href="./images/icons/icons.svg#icon-mobile-menu"
+              ></use>
+              <use
+                class="mobile-menu__icon-close"
+                href="./images/icons/icons.svg#icon-mobile-menu-close"
+              ></use>
+            </svg>
+          </button>
           <ul class="nav-list list">
             <li class="nav-list__item">
               <a
@@ -178,7 +201,6 @@
                 class="team__img"
                 src="./images/igor_demjanenko.jpeg"
                 alt="Фото Ігор Дем'яненко"
-                width="270"
               />
               <div class="team-thumb">
                 <h3 class="team-thumb__subtitle">Ігор Дем'яненко</h3>
@@ -223,7 +245,6 @@
                 class="team__img"
                 src="./images/olga_repina.jpeg"
                 alt="Фото Ольга Рєпіна"
-                width="270"
               />
               <div class="team-thumb">
                 <h3 class="team-thumb__subtitle">Ольга Рєпіна</h3>
@@ -268,7 +289,6 @@
                 class="team__img"
                 src="./images/mykola_tarasov.jpeg"
                 alt="Фото Микола Тарасов"
-                width="270"
               />
               <div class="team-thumb">
                 <h3 class="team-thumb__subtitle">Микола Тарасов</h3>
@@ -313,7 +333,6 @@
                 class="team__img"
                 src="./images/mykhailo_ermakov.jpeg"
                 alt="Фото Михайло Єрмаков"
-                width="270"
               />
               <div class="team-thumb">
                 <h3 class="team-thumb__subtitle">Михайло Єрмаков</h3>
@@ -414,75 +433,82 @@
     <!-- Footer adress -->
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__contacts">
-          <div class="footer__logo-container">
-            <a class="logo-footer logo" href="./index.html"
-              >Web<span class="logo-footer logo-footer--white">Studio</span></a
-            >
+        <div class="footer__contact-container">
+          <div class="footer__contacts">
+            <div class="footer__logo-container">
+              <a class="logo-footer logo" href="./index.html"
+                >Web<span class="logo-footer logo-footer--white"
+                  >Studio</span
+                ></a
+              >
+            </div>
+            <address class="footer-adress">
+              <ul class="footer-adress__list">
+                <li class="footer-adress__item">
+                  <a
+                    class="footer-adress__link footer-adress__link--white"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="footer-adress__item">
+                  <a
+                    class="footer-adress__link footer-adress__link--gray"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-adress__item">
+                  <a
+                    class="footer-adress__link footer-adress__link--gray"
+                    href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
           </div>
-          <address class="footer-adress">
-            <ul class="footer-adress__list">
-              <li class="footer-adress__item">
-                <a
-                  class="footer-adress__link footer-adress__link--white"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26
+          <!-- Footer social link -->
+          <div class="footer-social">
+            <p class="footer-social__title">Приєднуйтесь</p>
+
+            <ul class="footer-social__list">
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="">
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use
+                      href="./images/icons/icons.svg#icon-instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="">
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#icon-twitter"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="footer-adress__item">
-                <a
-                  class="footer-adress__link footer-adress__link--gray"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="footer-social__item">
+                <a class="footer-social__link" href="">
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/icons/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-adress__item">
-                <a
-                  class="footer-adress__link footer-adress__link--gray"
-                  href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="footer-social__item">
+                <a class="footer-social__link" href=""
+                  ><svg class="footer-social__icon" width="20" height="20">
+                    <use
+                      href="./images/icons/icons.svg#icon-linkedin"
+                    ></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <!-- Footer social link -->
-        <div class="footer-social">
-          <p class="footer-social__title">Приєднуйтесь</p>
 
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="">
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use
-                    href="./images/icons/icons.svg#icon-instagram"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="">
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/icons/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link" href="">
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/icons/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link" href=""
-                ><svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/icons/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
         <!-- footer form -->
         <div class="footer-form">
           <p class="footer-form__title">Підпишіться на розсилку</p>
@@ -592,5 +618,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
