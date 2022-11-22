@@ -104,6 +104,8 @@
 
 .footer-social__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
 }
 
@@ -199,6 +201,9 @@
 }
 .footer-form__button {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
   align-items: center;
 
   margin: 0 auto;
@@ -215,8 +220,4 @@
   @media screen and (max-width: 1199px) {
     margin: 0 auto;
   }
-}
-
-.footer-form__button-icon {
-  margin-left: 10px;
 }

@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.main-nav {
+  position: relative;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -36,6 +40,7 @@
 
   &__button {
     height: 40px;
+
     border: none;
     background-color: transparent;
     // margin-left: auto;
@@ -48,6 +53,7 @@
     display: block;
     .mobile-menu__button.is-open & {
       display: none;
+      overflow: hidden;
     }
   }
 
@@ -61,6 +67,22 @@
 
 .nav-list {
   display: none;
+
+  @media screen and (max-width: 767px) {
+    .main-nav.is-open & {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      padding: 48px 40px;
+      width: 480px;
+      height: 796px;
+      font-size: 40px;
+      background-color: yellow;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
 
@@ -81,7 +103,7 @@
   text-decoration: none;
 
   font-weight: 500;
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -96,22 +118,44 @@
 }
 
 .nav-list__link--current {
-  color: var(--accent-color);
+  @media screen and (min-width: 768px) {
+    color: var(--accent-color);
 
-  &::after {
-    content: " ";
-    position: absolute;
-    height: 4px;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    background-color: #2196f3;
-    border-radius: 2px;
+    &::after {
+      content: " ";
+      position: absolute;
+      height: 4px;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      background-color: #2196f3;
+      border-radius: 2px;
+    }
   }
 }
 
 .site-contacts {
   display: none;
+
+  .main-nav.is-open & {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 48px 40px;
+    max-width: 480px;
+    height: 796px;
+    font-size: 40px;
+    background-color: yellow;
+  }
+
+  @media screen and (max-width: 767px) {
+    .main-nav.is-open & {
+      display: block;
+      z-index: 1;
+    }
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: inline-block;
     align-items: center;
