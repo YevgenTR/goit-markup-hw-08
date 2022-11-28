@@ -15,17 +15,15 @@
     ),
     url("../images/hero.jpeg");
 
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url("../images/hero@2x.jpg");
+  }
   @media screen and (min-width: 480px) {
-    background-color: var(--hero-backgroun-color);
     background-size: cover;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/hero.jpeg");
   }
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    height: auto;
+    max-width: 100%;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;

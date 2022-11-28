@@ -3,26 +3,18 @@
 @import "./utils/modern-normalize";
 @import "./utils/base";
 
-@import "./components/sections";
-@import "./components/containers";
-
-@import "./components/header";
-@import "./components/site-logo";
-
-@import "./components/hero-section";
-@import "./components/backdrop";
-@import "./components/modal";
-
-@import "./components/mobile-menu";
-@import "./components/features-section";
-
 @import "./components/activities-section";
-
-@import "./components/team-section";
-
+@import "./components/backdrop";
 @import "./components/clients-section";
-
+@import "./components/containers";
+@import "./components/features-section";
 @import "./components/footer";
-
+@import "./components/header";
+@import "./components/hero-section";
+@import "./components/mobile-menu";
+@import "./components/modal";
 @import "./components/portfolio-filter-list";
 @import "./components/product-section";
+@import "./components/sections";
+@import "./components/site-logo";
+@import "./components/team-section";
