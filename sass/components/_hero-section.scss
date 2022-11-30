@@ -9,11 +9,17 @@
   background-color: var(--hero-backgroun-color);
   background-size: cover;
   background-position: center;
-  background-image: var(--hero-overlay),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url("../../images/hero_background_mobile.jpg");
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: var(--hero-overlay),
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
       url("../../images/hero_background_mobile@2x.jpg");
   }
 
