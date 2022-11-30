@@ -1,41 +1,52 @@
 .hero {
-  max-width: 480px;
-  max-height: 400px;
+  height: auto;
+  max-width: 100%;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
 
   text-align: center;
-  background-color: var(--hero-backgroun-color);
+  // background-color: var(--hero-backgroun-color);
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero.jpeg");
+  background-image: var(--hero-overlay),
+    url("../../images/hero_background_mobile.jpg");
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url("../images/hero@2x.jpg");
+    background-image: var(--hero-overlay),
+      url("../../images/hero_background_mobile@2x.jpg");
   }
-  @media screen and (min-width: 480px) {
-    background-size: cover;
-  }
+
   @media screen and (min-width: 768px) {
     height: auto;
     max-width: 100%;
+    background-image: var(--hero-overlay),
+      url("/images/hero_background_tablet.jpg");
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: var(--hero-overlay),
+        url("../../images/hero_background_tablet@2x.jpg");
+    }
   }
+
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
     max-height: 600px;
+    background-image: var(--hero-overlay),
+      url("../../images/hero_background_desktop.jpeg");
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: var(--hero-overlay),
+        url("../../images/hero_background_desktop@2x.jpg");
+    }
   }
 }
 
 .hero__title {
   margin: 0 auto 30px auto;
-  width: 360px;
+  max-width: 360px;
 
   font-weight: 900;
   font-size: 26px;
@@ -44,20 +55,10 @@
   text-transform: uppercase;
   color: var(--white-color);
 
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 480px) {
-  }
   @media screen and (min-width: 1200px) {
-    margin: 0 auto 30px auto;
-    width: 696px;
-
-    font-weight: 900;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--white-color);
   }
 }
 
