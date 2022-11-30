@@ -35,7 +35,7 @@
     max-width: 1600px;
     max-height: 600px;
     background-image: var(--hero-overlay),
-      url("../../images/hero_background_desktop.jpeg");
+      url("../../images/hero_background_desktop.jpg");
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: var(--hero-overlay),
