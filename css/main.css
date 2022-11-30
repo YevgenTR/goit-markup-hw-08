@@ -1155,6 +1155,7 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  background-color: var(--hero-backgroun-color);
   background-size: cover;
   background-position: center;
   background-image: var(--hero-overlay), url("../../images/hero_background_mobile.jpg");
