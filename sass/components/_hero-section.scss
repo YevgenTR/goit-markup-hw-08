@@ -30,14 +30,14 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/hero_background_tablet.jpg");
+      url("../images/hero_background_tablet.jpg");
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../../images/hero_background_tablet@2x.jpg");
+        url("../images/hero_background_tablet@2x.jpg");
     }
   }
 
@@ -50,14 +50,14 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/hero_background_desktop.jpg");
+      url("../images/hero_background_desktop.jpg");
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../../images/hero_background_desktop@2x.jpg");
+        url("../images/hero_background_desktop@2x.jpg");
     }
   }
 }
